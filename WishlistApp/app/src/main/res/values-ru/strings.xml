@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WishlistApp</string>
+    <string name="activity_edit_label_text">Ваш вишлист</string>
+    <string name="user_wishlist_status_label_text">Здесь пока ничего нет</string>
+    <string name="add_button_text">Добавить в вишлист</string>
+    <string name="back_button_text">Назад</string>
+    <string name="app_logo_description_text">Логотип приложения</string>
+    <string name="activity_main_label_text">Wishlist App</string>
+    <string name="search_button_text">Найти вишлист</string>
+    <string name="edit_button_text">Мой вишлист</string>
+    <string name="search_code_input_hint">Введите код...</string>
+    <string name="search_code_button_text">Найти</string>
+    <string name="search_status_label_text">Искомый вишлист появится ниже</string>
+    <string name="login_label_text">Логин:</string>
+    <string name="login_input_hint">Введите логин...</string>
+    <string name="password_label_text">Пароль:</string>
+    <string name="password_input_hint">Введите пароль...</string>
+    <string name="register_button_text">Регистрация</string>
+    <string name="login_button_text">Вход</string>
+    <string name="close_dialog_button_text">Назад</string>
+    <string name="item_title_text">Название предмета</string>
+    <string name="item_price_text">100 руб.</string>
+    <string name="current_user_text">Нет пользователя</string>
+    <string name="authorization_text">Авторизация</string>
+    <string name="register_login_text">Регистрация/Вход</string>
+    <string name="logout_text">Выход</string>
+    <string name="db_address_text">Адрес базы данных</string>
+    <string name="db_address_input_button_text">Подтвердить</string>
+    <string name="db_address_input_text">Введите адрес базы данных...</string>
+    <string name="db_address_label_text">Адрес базы данных:</string>
+</resources>

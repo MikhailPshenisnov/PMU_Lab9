@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_weight="2"
         android:gravity="center_vertical"
-        android:text="Название предмета" />
+        android:text="@string/item_title_text" />
 
     <Space
         android:layout_width="4dp"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="100$" />
+        android:text="@string/item_price_text" />
 
     <Space
         android:layout_width="4dp"
@@ -34,5 +34,5 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="link" />
+        android:text="@string/item_card_link_button_text" />
 </LinearLayout>
