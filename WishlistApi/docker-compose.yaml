@@ -1,0 +1,27 @@
+﻿services:
+  wishlist-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - wishlist-db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+  
+  wishlist-db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: WishlistDb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      PGPORT: 5432
+    volumes:
+      - wishlist_db_data:/var/lib/postgresql/data
+    ports:
+      - "5454:5432"
+
+volumes:
+  wishlist_db_data:
