@@ -126,4 +126,22 @@ class ItemsViewModel : ViewModel() {
             }
         }
     }
+
+    fun loadUserItems(userId: String) {
+        viewModelScope.launch {
+            _itemsState.value = UiState.Loading
+
+            val response = repository.getAllItems()
+
+            if (response.isSuccessful) {
+                val filteredItems = response.body()?.items
+                    ?.filter { it.userId == userId }
+                    ?: emptyList()
+
+                _itemsState.value = UiState.Success(filteredItems)
+            } else {
+                _itemsState.value = UiState.Error("Failed to load items")
+            }
+        }
+    }
 }

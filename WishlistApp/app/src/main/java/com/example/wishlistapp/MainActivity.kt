@@ -45,7 +45,19 @@ class MainActivity : AppCompatActivity() {
 
         editButton = findViewById(R.id.edit_button)
         editButton.setOnClickListener {
+            if (currentUserId == null || currentUserLogin == null) {
+                Toast.makeText(
+                    this,
+                    "Authorization needed",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return@setOnClickListener
+            }
 
+            val intent = Intent(this, EditActivity::class.java)
+            intent.putExtra("USER_ID", currentUserId)
+            intent.putExtra("USER_LOGIN", currentUserLogin)
+            startActivity(intent)
         }
     }
 

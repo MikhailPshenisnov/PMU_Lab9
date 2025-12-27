@@ -24,5 +24,7 @@
         </activity>
 
         <activity android:name=".SearchActivity" />
+
+        <activity android:name=".EditActivity" />
     </application>
 </manifest>
