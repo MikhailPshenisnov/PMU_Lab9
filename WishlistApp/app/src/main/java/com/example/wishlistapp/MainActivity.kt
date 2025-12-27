@@ -1,6 +1,7 @@
 package com.example.wishlistapp
 
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
@@ -38,7 +39,8 @@ class MainActivity : AppCompatActivity() {
 
         searchButton = findViewById(R.id.search_button)
         searchButton.setOnClickListener {
-
+            val intent = Intent(this, SearchActivity::class.java)
+            startActivity(intent)
         }
 
         editButton = findViewById(R.id.edit_button)

@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
     android:orientation="horizontal"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:background="@color/background_secondary">
 
     <TextView
         android:id="@+id/item_title"
