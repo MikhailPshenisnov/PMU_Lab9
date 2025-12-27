@@ -14,7 +14,4 @@
                 android:title="@string/logout_text" />
         </menu>
     </item>
-    <item
-        android:id="@+id/db_address"
-        android:title="@string/db_address_text" />
 </menu>
