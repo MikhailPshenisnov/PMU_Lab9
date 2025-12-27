@@ -5,26 +5,28 @@ namespace WishlistApi.Services;
 
 public class AuthorizationService(IUsersService usersService) : IAuthorizationService
 {
-    public async Task<bool> RegisterUser(string login, string password, CancellationToken ct)
+    public async Task<Guid?> RegisterUser(string login, string password, CancellationToken ct)
     {
         var existedUser = (await usersService.GetAllUsers(ct))
             .FirstOrDefault(u => u.Login == login);
 
-        if (existedUser is not null) return false;
+        if (existedUser is not null) return null;
 
         var createdUserId = await usersService
             .CreateUser(new UserModel { Id = Guid.NewGuid(), Login = login, Password = password }, ct);
 
-        return createdUserId is not null;
+        return createdUserId;
     }
 
-    public async Task<bool> LoginUser(string login, string password, CancellationToken ct)
+    public async Task<Guid?> LoginUser(string login, string password, CancellationToken ct)
     {
         var existedUser = (await usersService.GetAllUsers(ct))
             .FirstOrDefault(u => u.Login == login);
 
-        if (existedUser is null) return false;
+        if (existedUser is null) return null;
 
-        return existedUser.Password == password;
+        if (existedUser.Password != password) return null;
+        
+        return existedUser.Id;
     }
 }
