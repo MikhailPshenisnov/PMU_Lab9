@@ -29,4 +29,13 @@
     <string name="db_address_input_button_text">Подтвердить</string>
     <string name="db_address_input_text">Введите адрес базы данных...</string>
     <string name="db_address_label_text">Адрес базы данных:</string>
+    <string name="share_button_text">Поделиться</string>
+    <string name="db_address_reset_button_text">Сбросить</string>
+    <string name="create_item_label_text">Создать элемент:</string>
+    <string name="item_title_input_text">Заголовок...</string>
+    <string name="item_price_input_text">Цена...</string>
+    <string name="item_link_input_text">Ссылка...</string>
+    <string name="create_item_input_button_text">Создать</string>
+    <string name="update_item_input_button_text">Сохранить</string>
+    <string name="update_item_label_text">Обновить элемент:</string>
 </resources>

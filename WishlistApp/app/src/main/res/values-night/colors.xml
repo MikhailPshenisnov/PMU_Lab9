@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="white">#FF121212</color>
-    <color name="black">#FFFFFFFF</color>
+    <color name="colorPrimary">#FFCA28</color>
+    <color name="colorPrimaryDark">#FF8F00</color>
+    <color name="colorAccent">#FF5252</color>
 
-    <color name="primary_red">#FF8A6B</color>
-    <color name="primary_yellow">#FFD54F</color>
-    <color name="accent_orange">#FFB74D</color>
-    <color name="dark_red">#EF5350</color>
-    <color name="light_yellow">#FFF59D</color>
+    <color name="background_primary">#121212</color>
+    <color name="background_secondary">#1D1D1D</color>
 
-    <color name="gray_light">#424242</color>
-    <color name="gray_medium">#757575</color>
-    <color name="gray_dark">#BDBDBD</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="text_hint">#757575</color>
 
-    <color name="primary_red_light">#FFAB91</color>
-    <color name="primary_red_dark">#FF6B3B</color>
-
-    <color name="background_white">#FF121212</color>
-    <color name="background_light">#FF1E1E1E</color>
-    <color name="background_yellow">#1AFFC107</color>
-
-    <color name="text_primary">#FFFFFFFF</color>
-    <color name="text_secondary">#FFBDBDBD</color>
-    <color name="text_hint">#FF757575</color>
-    <color name="text_white">#FFFFFFFF</color>
-
-    <color name="ripple_light">#1FFFFFFF</color>
-    <color name="ripple_dark">#33000000</color>
-
-    <color name="divider">#33FFFFFF</color>
-    <color name="border_light">#FF424242</color>
-
-    <color name="success_green">#81C784</color>
-    <color name="error_red">#E57373</color>
-    <color name="warning_orange">#FFB74D</color>
-    <color name="info_blue">#64B5F6</color>
+    <color name="divider">#333333</color>
+    <color name="border">#424242</color>
+    <color name="icon_tint">#FFFFFF</color>
 </resources>
