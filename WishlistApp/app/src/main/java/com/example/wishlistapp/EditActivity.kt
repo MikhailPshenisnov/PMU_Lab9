@@ -85,7 +85,7 @@ class EditActivity : AppCompatActivity() {
             itemsViewModel.actionState.collect { state ->
                 when (state) {
                     is UiState.Success -> {
-                        itemsViewModel.loadItems()
+                        itemsViewModel.loadUserItems(userId)
                     }
 
                     is UiState.Error -> {
